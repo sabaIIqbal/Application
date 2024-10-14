@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    min-height: 100vh; /* Ensures the body stretches to fill the page height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: lightcoral;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    flex-grow: 1; /* Main content takes up available space */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightcoral;
+    color: #fff;
+    width: 100%;
+    height: 60px; /* Keeps the footer a consistent height */
+    line-height: 60px; /* Vertically centers the text */
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        background-color: lightgrey;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        background-color: grey;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 5px 0;
+        height: auto;
+        line-height: normal;
+    }
+}
